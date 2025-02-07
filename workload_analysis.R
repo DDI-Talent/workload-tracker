@@ -42,13 +42,13 @@ waffle_plot
 
 # Could work on a pictogram next time
 # The below doesn't work yet
-pict_plot <- workload_data %>% 
-  filter(!is.na(Category)) %>% 
-  count(Category, wt = fortnight) %>% 
-  geom_pictogram(
-    n_rows = 7, 
-    aes(colour = Category), 
-    flip = TRUE, 
-    make_proportional = TRUE
-  )
+# pict_plot <- workload_data %>% 
+#   filter(!is.na(Category)) %>% 
+#   count(Category, wt = fortnight) %>% 
+#   geom_pictogram(
+#     n_rows = 7, 
+#     aes(colour = Category), 
+#     flip = TRUE, 
+#     make_proportional = TRUE
+#   )
   
