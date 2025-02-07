@@ -3,7 +3,10 @@
 library(waffle)
 library(tidyverse)
 library(dutchmasters)
+# Read in the data file 
 workload_data <- read_csv("Workload_2025.csv")
+# Create a new column with the number of hours spent on each task
+# in the fortnight between 20-31 January
 workload_data <- workload_data %>% 
   mutate(fortnight = `Week of 20/01` + `Week of 27/01`)
 
